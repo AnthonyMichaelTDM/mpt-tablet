@@ -8,6 +8,8 @@
 $screen = 'eDP'
 $touchscreen = 'ELAN0732:00 04F3:2650 touch'
 $touchpad = 'SynPS/2 Synaptics Touchpad'
+$stylus = 'ELAN0732:00 04F3:2650 Stylus stylus'
+$eraser = 'ELAN0732:00 04F3:2650 Stylus eraser' 
 $keyboard = 'AT Translated Set 2 keyboard'
 
 # disable keypad and touchpad on all but normal orientation
@@ -41,6 +43,14 @@ def orientateCmd(orientation, transform)
                               " --type=float" +
                               " 'Coordinate Transformation Matrix'" +
                               " #{transform}"
+    rotateStylus = "xinput --set-prop '#{$stylus}'" +
+                              " --type=float" +
+                              " 'Coordinate Transformation Matrix'" +
+                              " #{transform}"
+    rotateEraser = "xinput --set-prop '#{$eraser}'" +
+                              " --type=float" +
+                              " 'Coordinate Transformation Matrix'" +
+                              " #{transform}"
     controlKeys = ""
     if $controlKeys
         setCmd = orientation == 'normal' ? 'xinput --enable ' 
@@ -52,7 +62,9 @@ def orientateCmd(orientation, transform)
 
     return controlKeys +
            rotateScreen + ';' +
-           rotateTouchscreen + ';'
+           rotateTouchscreen + ';' + 
+           rotateStylus + ';' +
+           rotateEraser + ';'
 end
 
 
