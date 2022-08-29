@@ -15,7 +15,7 @@ $controlKeys = true
 
 # runs cmd and greps output to find orientation
 $orientationCmd = 'xrandr --query --verbose'
-$orientationRE = /#{$screen}.*\ (normal|left|inverted|right) \c/
+$orientationRE = /#{$screen}.*\) (normal|left|inverted|right) \(/
 
 # default direction
 $defaultDirection = 'normal'
@@ -46,7 +46,7 @@ def orientateCmd(orientation, transform)
         setCmd = orientation == 'normal' ? 'xinput --enable ' 
                                          : 'xinput --disable '
         # disable keyboard because we don't want stray keyboard inputs on a TWM, but don't disable touchpad because we need a way to recover if touchscreen breaks
-        controlKeys = "#{setCmd} '#$keyboard}';"
+        controlKeys = "#{setCmd} '#{$keyboard}';"
         #controlKeys = "#{setCmd} '#{$touchpad}'; #{setCmd} '#{$keyboard}';"
     end
 
