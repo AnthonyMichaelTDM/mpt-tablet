@@ -22,13 +22,13 @@ super + F3
 super + F4
     gimp
 
-#Meld
+#krita
 super + F5
-    meld
+    krita
 
-#Parole
+#Xournal++
 super + F6
-    parole
+    xournalpp
 
 #libre office
 super + F7
@@ -38,9 +38,9 @@ super + F7
 super + F8
     thunar
 
-#git kraken
+#Parole
 super + F9
-    gitkraken
+    parole
 
 #Discord
 super + F10
