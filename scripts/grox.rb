@@ -56,8 +56,8 @@ def orientateCmd(orientation, transform)
         setCmd = orientation == 'normal' ? 'xinput --enable ' 
                                          : 'xinput --disable '
         # disable keyboard because we don't want stray keyboard inputs on a TWM, but don't disable touchpad because we need a way to recover if touchscreen breaks
-        controlKeys = "#{setCmd} '#{$keyboard}';"
-        #controlKeys = "#{setCmd} '#{$touchpad}'; #{setCmd} '#{$keyboard}';"
+        #controlKeys = "#{setCmd} '#{$keyboard}';"
+        controlKeys = "#{setCmd} '#{$touchpad}'; #{setCmd} '#{$keyboard}';"
     end
 
     return controlKeys +
