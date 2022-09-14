@@ -7,7 +7,7 @@
 # devices to manipulate
 $screen = 'eDP'
 $touchscreen = 'ELAN0732:00 04F3:2650 touch'
-$touchpad = 'SynPS/2 Synaptics Touchpad'
+$touchpad = 'SynPS/2 Synaptics TouchPad'
 $stylus = 'ELAN0732:00 04F3:2650 Stylus stylus'
 $eraser = 'ELAN0732:00 04F3:2650 Stylus eraser' 
 $keyboard = 'AT Translated Set 2 keyboard'
