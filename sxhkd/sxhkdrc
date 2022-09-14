@@ -327,7 +327,7 @@ ctrl + Print
 
 #screenshot a region
 super + shift + s
-     xfce4-screenshooter -r
+     xfce4-screenshooter -r -c
 
 #Gnome-Screenshot
 #ctrl + shift + Print
