@@ -327,7 +327,7 @@ ctrl + Print
 
 #screenshot a region
 super + shift + s
-     xfce4-screenshooter -r -c
+     xfce4-screenshooter -rs /dev/stout | xclip -selection clipboard -t image/png
 
 #Gnome-Screenshot
 #ctrl + shift + Print
