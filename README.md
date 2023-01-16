@@ -2,7 +2,7 @@
 leftwm theme based on https://github.com/AnthonyMichaelTDM/master-pywal-theme
 contains all the wallpapers in backgrounds, and allows you to cycle through them
 
-also makes use of the [grox.rb](https://github.com/AnthonyMichaelTDM/grox) script
+also makes use of the [grox.py](https://github.com/AnthonyMichaelTDM/grox) script
 ## (example) Screenshot
 ![desktop](./desktop.jpg)
 
