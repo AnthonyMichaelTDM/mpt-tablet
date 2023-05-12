@@ -26,7 +26,7 @@ fi
 # diversity of apps to start
 nm-applet &
 pamac-tray &
-xfce4-power-manager &
+# xfce4-power-manager &
 numlockx on &
 blueberry-tray &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
