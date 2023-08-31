@@ -390,7 +390,7 @@ XF86AudioStop
 
 #Brightness up
 XF86MonBrightnessUp
-    brightnessctl set +10
+    brightnessctl set +10 # use xbacklight if this doesn't work
 
 #Brightness down
 XF86MonBrightnessDown
