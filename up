@@ -56,7 +56,7 @@ elif [ -x "$(command -v compton)" ]; then
 fi
 
 #Set the theme.toml config
-echo "LoadTheme $SCRIPTPATH/theme.ron" > $XDG_RUNTIME_DIR/leftwm/commands-0.pipe
+leftwm-theme "LoadTheme $SCRIPTPATH/theme.toml"
 
 #mainbar
 index=0
